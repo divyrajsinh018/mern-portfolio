@@ -1,0 +1,56 @@
+Mern React Portfolio
+
+mern-portfolio/
+├── README.md
+├── frontend/
+│   ├── .env.example
+│   ├── .eslintrc.cjs
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── src/
+│       ├── index.css
+│       ├── main.jsx
+│       ├── routes.jsx
+│       ├── services/
+│       │   └── api.js
+│       ├── hooks/
+│       │   └── useLocalStorage.js
+│       ├── assets/
+│       │   ├── logo.svg
+│       │   └── react.svg
+│       └── components/
+│           ├── Navbar.jsx
+│           ├── DarkModeToggle.jsx
+│           ├── Hero.jsx
+│           ├── About.jsx
+│           ├── Skills.jsx
+│           ├── Projects.jsx
+│           ├── ProjectFilters.jsx
+│           ├── ProjectCard.jsx
+│           ├── ProjectDetail.jsx
+│           ├── Contact.jsx
+│           ├── Footer.jsx
+│           ├── LoadingCard.jsx
+│           └── NotFound.jsx
+└── backend/
+    ├── .env.example
+    ├── .eslintrc.cjs
+    ├── package.json
+    ├── server.js
+    └── src/
+        ├── app.js
+        ├── db.js
+        ├── seed.js
+        ├── middleware/
+        │   └── rateLimit.js
+        ├── models/
+        │   ├── Message.js
+        │   └── Project.js
+        ├── routes/
+        │   ├── contact.js
+        │   └── projects.js
+        └── utils/
+            └── validate.js
