@@ -12,12 +12,11 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     origin: [
-    //   "http://localhost:5173", // Local frontend
-      "https://mern-portfolio-97mq.onrender.com", // Deployed frontend
+      "https://mern-portfolio-97mq.onrender.com", // Your frontend URL
     ],
     methods: ["GET", "POST"],
     credentials: true,
-  }));
+}));
 app.use(helmet());
 
 // Routes
