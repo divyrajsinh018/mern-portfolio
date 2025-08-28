@@ -26,9 +26,12 @@
 // }
 
 // src/services/api.js
+
+// src/services/api.js
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+// Must use import.meta.env for Vite environment variables
+const API_URL = import.meta.env.VITE_API_URL; // NOT VITE_API_URL directly
 
 export const api = {
   sendMessage: async (data) => {

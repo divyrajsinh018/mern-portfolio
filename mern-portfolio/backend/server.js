@@ -10,7 +10,14 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: [
+    //   "http://localhost:5173", // Local frontend
+      "https://mern-portfolio-97mq.onrender.com", // Deployed frontend
+    ],
+    methods: ["GET", "POST"],
+    credentials: true,
+  }));
 app.use(helmet());
 
 // Routes

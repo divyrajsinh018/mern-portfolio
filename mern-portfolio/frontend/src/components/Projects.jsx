@@ -7,53 +7,50 @@ import uiuxImg from "../assets/projects/UX-UI.jpg";
 export default function Projects() {
   const projects = [
     {
-      slug: "frontend-project",
-      title: "Frontend project",
-      category: "Web Design",
+      slug: "portfolio-website",
+      title: "My Portfolio Website",
+      category: "Full-Stack MERN Development",
       image: frontendImg,
-      description: "A modern frontend project showcasing web design and UI components.",
-      github: "https://github.com/your-username/frontend-project",
-      demo: "https://your-demo-link.com",
+      github: "https://github.com/divyrajsinh018/mern-portfolio",
     },
     {
-      slug: "geo-based-app",
-      title: "Geo based app",
-      category: "Mobile App",
+      slug: "ai-interview-prep",
+      title: "AI-Powered Interview Prep App",
+      category: "Full-Stack MERN Development",
       image: geoImg,
-      description: "Mobile app project with geo-location based features.",
-      github: "https://github.com/your-username/geo-app",
-      demo: "https://your-demo-link.com",
+      github: "https://github.com/divyrajsinh018/Interviewprepai",
     },
     {
-      slug: "photography-site",
-      title: "Photography site",
-      category: "Web Design",
+      slug: "ecommerce-customizer",
+      title: "E-Commerce Product Customizer",
+      category: "Frontend Development",
       image: photoImg,
-      description: "Photography portfolio website with image gallery and responsive design.",
-      github: "https://github.com/your-username/photo-site",
-      demo: "https://your-demo-link.com",
+      github: "#", // still in progress
     },
     {
-      slug: "uiux-designing",
-      title: "UI/UX designing",
-      category: "UI/UX Design",
+      slug: "alliedge-clone",
+      title: "Alliedge Technologies Website Clone",
+      category: "Full-Stack MERN Development",
       image: uiuxImg,
-      description: "UI/UX design project focusing on user-friendly interfaces.",
-      github: "https://github.com/your-username/uiux-design",
-      demo: "https://your-demo-link.com",
+      github: "https://github.com/divyrajsinh018/Alliedge-Group",
     },
   ];
 
   return (
-    <section id="work" className="w-[108%] section py-16 md:py-24">
+    <section
+      id="work"
+      className="w-[108%] section py-16 md:py-24 bg-gray-50 dark:bg-gray-950"
+    >
       <div className="container mx-auto text-center">
-        <h3 className="text-gray-500 uppercase">My portfolio</h3>
-        <h2 className="section-title text-4xl font-bold mb-4">My latest work</h2>
-        <p className="max-w-2xl mx-auto text-gray-600 mb-12">
-          Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
+        <h3 className="text-gray-500 dark:text-gray-400 uppercase">Projects</h3>
+        <h2 className="section-title text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          My Work as MERN Stack Developer
+        </h2>
+        <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 mb-12">
+          Here’s a collection of my recent projects demonstrating my skills in full-stack web development with the MERN stack. Each project includes frontend and backend work, responsive design, authentication, and API integrations.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {projects.map((p) => (
             <ProjectCard key={p.slug} project={p} />
           ))}
