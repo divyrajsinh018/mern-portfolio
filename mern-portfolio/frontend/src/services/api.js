@@ -25,10 +25,11 @@
 //   sendMessage: (payload) => post('/api/contact', payload),
 // }
 
+
 // src/services/api.js
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL; // ✅ Correct
+const API_URL = import.meta.env.VITE_API_URL; // ✅ Use env for flexibility
 
 export const api = {
   sendMessage: async (data) => {

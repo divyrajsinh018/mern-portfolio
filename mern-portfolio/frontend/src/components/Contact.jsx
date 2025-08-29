@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-[108%] section py-16 md:py-24 bg-gray-50 dark:bg-gray-900"
+      className="w-full section py-16 md:py-24 bg-gray-50 dark:bg-gray-900"
     >
       <Helmet>
         <title>MERN Portfolio – Contact</title>
